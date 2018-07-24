@@ -1,0 +1,60 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "travix/base",
+    "travix/react"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "__base": true,
+    "assert": true,
+    "beforeEach": true,
+    "describe": true,
+    "enzyme": true,
+    "expect": true,
+    "it": true,
+    "jest": true,
+    "React": true,
+    "ReactDOM": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "max-len": [2, {"code": 120, "comments": 120, "tabWidth": 4}],
+    "react/jsx-indent": [2, 2],
+    "react/react-in-jsx-scope": 0,
+    "no-console": ["warn", { "allow": ["warn"] }],
+    "no-else-return": 0,
+    "react/prefer-stateless-function": ["error"],
+    "multiline-ternary": ["off"],
+    "operator-linebreak": [2, "after", {
+      "overrides": {
+        "?": "before",
+        ":": "before",
+        "&&": "ignore",
+        "||": "ignore",
+        "=": "ignore",
+        "+": "ignore"
+      }
+    }]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "15.0"
+    }
+  }
+}

@@ -1,0 +1,318 @@
+$ui-badge__arrow-border-fix: calc(var(--tx-badge-border-bottom-width) * var(--tx-badge-arrow-angle-coefficient));
+
+.ui-badge {
+  position: relative;
+
+  .ui-badge-badge {
+    $position: calc(-1 * var(--tx-badge-before-border-size));
+
+    &.ui-badge-badge_top,
+    &.ui-badge-badge_right,
+    &.ui-badge-badge_bottom,
+    &.ui-badge-badge_left {
+      position: absolute;
+    }
+
+    &.ui-badge-badge_top {
+      top: $position;
+
+      &.ui-badge-badge_start {
+        left: var(--tx-badge-indent);
+      }
+
+      &.ui-badge-badge_center {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &.ui-badge-badge_end {
+        left: auto;
+        right: var(--tx-badge-indent);
+      }
+    }
+
+    &.ui-badge-badge_right {
+      max-width: 100%;
+      right: $position;
+      padding-right: var(--tx-badge-padding-corner-side);
+
+      &.ui-badge-badge_start {
+        top: var(--tx-badge-indent);
+      }
+
+      &.ui-badge-badge_center {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.ui-badge-badge_end {
+        bottom: var(--tx-badge-indent);
+        top: auto;
+      }
+    }
+
+    &.ui-badge-badge_bottom {
+      bottom: $position;
+
+      &.ui-badge-badge_start {
+        left: var(--tx-badge-indent);
+        right: auto;
+      }
+
+      &.ui-badge-badge_center {
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      &.ui-badge-badge_end {
+        right: var(--tx-badge-indent);
+      }
+    }
+
+    &.ui-badge-badge_left {
+      left: $position;
+      max-width: 100%;
+      padding-left: var(--tx-badge-padding-corner-side);
+
+      &.ui-badge-badge_start {
+        top: var(--tx-badge-indent);
+      }
+
+      &.ui-badge-badge_center {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &.ui-badge-badge_end {
+        bottom: var(--tx-badge-indent);
+        top: auto;
+      }
+    }
+  }
+}
+
+.ui-badge-badge {
+  $border-radius-start: var(--tx-badge-border-radius-start);
+  $border-radius-end-top: var(--tx-badge-border-radius-end-top);
+  $border-radius-end-bottom: var(--tx-badge-border-radius-end-bottom);
+
+  background-clip: padding-box;
+  background-color: var(--tx-badge-color-background);
+  border-bottom: var(--tx-badge-border-bottom-width) var(--tx-badge-border-bottom-style) transparent;
+  border-radius: $border-radius-start;
+  color: var(--tx-badge-color-text);
+  display: inline-block;
+  font-family: var(--tx-generic-font-primary-font-family), var(--tx-generic-font-primary-generic-family);
+  font-size: var(--tx-badge-font-size);
+  font-weight: var(--tx-generic-font-primary-weight-bold);
+  line-height: 1em;
+  padding: var(--tx-badge-padding-top-bottom) var(--tx-badge-padding-right-left);
+  position: relative;
+  text-transform: uppercase;
+
+  &.ui-badge-badge_no-border {
+    border-bottom: none;
+  }
+
+  &:before,
+  &:after,
+  & .ui-badge__border:after,
+  & .ui-badge__border:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+
+  & .ui-badge-badge-arrow {
+    border: none;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    &:before,
+    &:after {
+      background-size: 50% 100%;
+      content: '';
+      display: block;
+      height: 50%;
+      position: absolute;
+      width: 8px;
+    }
+  }
+
+  $border-transparent: var(--tx-badge-after-border-size) solid transparent;
+  $border-filled: var(--tx-badge-before-border-size) solid var(--tx-badge-before-border-color);
+
+  &.ui-badge-badge_top {
+    border-radius: 0 $border-radius-start $border-radius-start;
+
+    &:before {
+      border-bottom: $border-filled;
+      border-left: $border-transparent;
+      right: 100%;
+      top: 0;
+    }
+  }
+
+  &.ui-badge-badge_right {
+    border-radius: $border-radius-end-top $border-radius-start 0 $border-radius-end-bottom;
+
+    .ui-badge__border:before,
+    &.ui-badge-badge_no-border:before {
+      border-bottom: $border-transparent;
+      border-left: $border-filled;
+      top: 100%;
+      right: 0;
+    }
+  }
+
+  &.ui-badge-badge_bottom {
+    border-radius: $border-radius-start $border-radius-start $border-radius-start 0;
+
+    &:before {
+      border-left: $border-transparent;
+      border-top: $border-filled;
+      bottom: calc(-1 * var(--tx-badge-border-bottom-width));
+      right: 100%;
+    }
+
+    &.ui-badge-badge_no-border:before {
+      bottom: 0;
+    }
+  }
+
+  &.ui-badge-badge_left {
+    border-radius: $border-radius-start $border-radius-end-top $border-radius-end-bottom 0;
+
+    .ui-badge__border:before,
+    &.ui-badge-badge_no-border:before {
+      border-bottom: $border-transparent;
+      border-right: $border-filled;
+      left: 0;
+      top: 100%;
+    }
+  }
+
+  $arrow-border-big: calc(var(--tx-badge-font-size) / 2 + var(--tx-badge-padding-top-bottom));
+  $arrow-border-small: calc((var(--tx-badge-font-size) / 2 + var(--tx-badge-padding-top-bottom)) * var(--tx-badge-arrow-angle-coefficient));
+
+  &.ui-badge-badge_arrow-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: $arrow-border-small;
+
+    & .ui-badge-badge-arrow {
+      left: -8px;
+
+      &:before {
+        background: linear-gradient(
+          to bottom left,
+          var(--tx-badge-color-background) 0,
+          var(--tx-badge-color-background) 50%,
+          transparent calc(50% + 1px),
+          transparent 100%
+        );
+        top: 50%;
+      }
+
+      &:after {
+        background: linear-gradient(
+          to top left,
+          var(--tx-badge-color-background) 0,
+          var(--tx-badge-color-background) 50%,
+          transparent calc(50% + 1px),
+          transparent 100%
+        );
+        top: 0;
+      }
+    }
+
+    .ui-badge__border:after {
+      border-left: $ui-badge__arrow-border-fix solid transparent;
+      border-top: var(--tx-badge-border-bottom-width) solid var(--tx-badge-border-bottom-color);
+      right: 100%;
+    }
+
+    &.ui-badge-badge_no-border {
+      .ui-badge__border:after {
+        border: none;
+      }
+    }
+
+    &.ui-badge-badge_small {
+      padding: var(--tx-badge-s-padding-top-bottom) var(--tx-badge-s-padding-right) var(--tx-badge-s-padding-top-bottom) var(--tx-badge-s-padding-left);
+    }
+  }
+
+  &.ui-badge-badge_arrow-right {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: $arrow-border-small;
+
+    & .ui-badge-badge-arrow {
+      right: 0;
+
+      &:before {
+        background: linear-gradient(
+          to bottom right,
+          var(--tx-badge-color-background) 0,
+          var(--tx-badge-color-background) 50%,
+          transparent calc(50% + 1px),
+          transparent 100%
+        );
+        top: 50%;
+      }
+
+      &:after {
+        background: linear-gradient(
+          to top right,
+          var(--tx-badge-color-background) 0,
+          var(--tx-badge-color-background) 50%,
+          transparent calc(50% + 1px),
+          transparent 100%
+        );
+        top: 0;
+      }
+    }
+
+    .ui-badge__border:after {
+      border-right: $ui-badge__arrow-border-fix solid transparent;
+      border-top: var(--tx-badge-border-bottom-width) solid var(--tx-badge-border-bottom-color);
+      left: 100%;
+    }
+
+    &.ui-badge-badge_no-border {
+      .ui-badge__border:after {
+        border: none;
+      }
+    }
+
+    &.ui-badge-badge_s {
+      padding: var(--tx-badge-s-padding-top-bottom) var(--tx-badge-s-padding-right) var(--tx-badge-s-padding-top-bottom) var(--tx-badge-s-padding-left);
+    }
+  }
+
+  &.ui-badge-badge_s {
+    font-size: var(--tx-badge-s-font-size);
+    padding: var(--tx-badge-s-padding-top-bottom) var(--tx-badge-padding-right-left);
+  }
+}
+
+.ui-badge__border {
+  background: var(--tx-badge-border-bottom-color);
+  bottom: calc(var(--tx-badge-border-bottom-width) * -1);
+  height: var(--tx-badge-border-bottom-width);
+  left: 0;
+  position: absolute;
+  right: 0;
+
+  .ui-badge-badge_arrow-right & {
+    right: $ui-badge__arrow-border-fix;
+  }
+
+  .ui-badge-badge_arrow-left & {
+    left: $ui-badge__arrow-border-fix;
+  }
+}

@@ -1,0 +1,101 @@
+.ui-stepper {
+  display: flex;
+  height: 39px;
+  justify-content: space-between;
+}
+
+.ui-stepper__button {
+  background: linear-gradient(to bottom,  var(--tx-generic-color-accent-top) 0%, var(--tx-generic-color-accent-bottom) 100%); /* W3C */
+  background: var(--tx-generic-color-accent-bottom); /* Old browsers */
+  border: none;
+  border-bottom: 3px solid var(--tx-generic-color-accent-border);
+  border-radius: 5px;
+  box-shadow: none;
+  color: var(--tx-generic-color-primary-lighter);
+  font-size: 22px;
+  height: 39px;
+  line-height: 39px;
+  margin:0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 36px;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: solid 3px var(--tx-generic-color-accent-border);
+    box-shadow: none;
+    color: var(--tx-generic-color-active);
+    margin: 0;
+    transition: color .1s ease-in-out;
+  }
+
+  &:active {
+    border-bottom: solid 1px var(--tx-generic-color-accent-border);
+    box-shadow: none;
+    color: var(--tx-generic-color-active);
+  }
+
+  &:before {
+    font-size: 20px;
+    width: 36px;
+  }
+}
+
+.ui-stepper__button-disabled {
+  background: linear-gradient(to bottom, var(--tx-generic-color-secondary-dark) 0%, var(--tx-generic-color-secondary-darker) 100%);
+  border-bottom: solid 3px var(--tx-generic-color-secondary-darkest);
+  box-shadow: none;
+  color: var(--tx-generic-color-secondary-darkest);
+  cursor: default;
+}
+
+.ui-stepper__button-increase {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+
+  &:before {
+    content: "+";
+  }
+}
+
+.ui-stepper__button-decrease {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+
+  &:before {
+    content: "-";
+  }
+}
+
+
+.ui-stepper__content {
+  display: flex;
+  position: relative;
+}
+
+.ui-stepper__value {
+  background-color: var(--tx-generic-color-blank);
+  color: var(--tx-generic-color-primary);
+  font-family: var(--tx-generic-font-primary-font-family), var(--tx-generic-font-primary-generic-family);
+  font-size: 23px;
+  font-weight: var(--tx-generic-font-primary-weight-bold);
+  line-height: 39px;
+  text-align: center;
+  width: 48px;
+}
+
+.ui-stepper__shadow {
+  border-bottom: 39px solid rgba(0, 0, 0, 0.1);
+  border-left: 7px solid transparent;
+  height: 0;
+  left: 77px;
+  position: absolute;
+  width: 7px;
+}
+

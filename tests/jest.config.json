@@ -1,0 +1,33 @@
+{
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "builder/**/*.js",
+    "!builder/program.js",
+    "!builder/webpack.config.js",
+    "components/**/*.js",
+    "!components/index.js"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "moduleFileExtensions": [
+    "js",
+    "json"
+  ],
+  "rootDir": "../",
+  "setupFiles": [
+    "<rootDir>/tests/setupTests.js"
+  ],
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "transform": {
+    ".*": "babel-jest"
+  },
+  "watchman": false
+}

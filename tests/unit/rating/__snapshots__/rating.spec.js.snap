@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating #render() renders with custom data attributes 1`] = `
+<Rating
+  dataAttrs={
+    Object {
+      "ui-test": "rating",
+    }
+  }
+  rate={0}
+  size={5}
+>
+  <div
+    className="ui-rating"
+    data-ui-test="rating"
+  >
+    <b
+      key="0"
+    >
+      ★
+    </b>
+    <b
+      key="1"
+    >
+      ★
+    </b>
+    <b
+      key="2"
+    >
+      ★
+    </b>
+    <b
+      key="3"
+    >
+      ★
+    </b>
+    <b
+      key="4"
+    >
+      ★
+    </b>
+    <div
+      className="ui-rating-value"
+      style={
+        Object {
+          "width": "0%",
+        }
+      }
+    >
+      <b
+        key="0"
+      >
+        ★
+      </b>
+      <b
+        key="1"
+      >
+        ★
+      </b>
+      <b
+        key="2"
+      >
+        ★
+      </b>
+      <b
+        key="3"
+      >
+        ★
+      </b>
+      <b
+        key="4"
+      >
+        ★
+      </b>
+    </div>
+  </div>
+</Rating>
+`;
+
+exports[`Rating #render() renders with custom props 1`] = `
+<Rating
+  rate={1.5}
+  size={10}
+>
+  <div
+    className="ui-rating"
+  >
+    <b
+      key="0"
+    >
+      ★
+    </b>
+    <b
+      key="1"
+    >
+      ★
+    </b>
+    <b
+      key="2"
+    >
+      ★
+    </b>
+    <b
+      key="3"
+    >
+      ★
+    </b>
+    <b
+      key="4"
+    >
+      ★
+    </b>
+    <b
+      key="5"
+    >
+      ★
+    </b>
+    <b
+      key="6"
+    >
+      ★
+    </b>
+    <b
+      key="7"
+    >
+      ★
+    </b>
+    <b
+      key="8"
+    >
+      ★
+    </b>
+    <b
+      key="9"
+    >
+      ★
+    </b>
+    <div
+      className="ui-rating-value"
+      style={
+        Object {
+          "width": "15%",
+        }
+      }
+    >
+      <b
+        key="0"
+      >
+        ★
+      </b>
+      <b
+        key="1"
+      >
+        ★
+      </b>
+      <b
+        key="2"
+      >
+        ★
+      </b>
+      <b
+        key="3"
+      >
+        ★
+      </b>
+      <b
+        key="4"
+      >
+        ★
+      </b>
+      <b
+        key="5"
+      >
+        ★
+      </b>
+      <b
+        key="6"
+      >
+        ★
+      </b>
+      <b
+        key="7"
+      >
+        ★
+      </b>
+      <b
+        key="8"
+      >
+        ★
+      </b>
+      <b
+        key="9"
+      >
+        ★
+      </b>
+    </div>
+  </div>
+</Rating>
+`;
+
+exports[`Rating #render() renders with default props and mods provided 1`] = `
+<Rating
+  rate={0}
+  size={5}
+>
+  <div
+    className="ui-rating"
+  >
+    <b
+      key="0"
+    >
+      ★
+    </b>
+    <b
+      key="1"
+    >
+      ★
+    </b>
+    <b
+      key="2"
+    >
+      ★
+    </b>
+    <b
+      key="3"
+    >
+      ★
+    </b>
+    <b
+      key="4"
+    >
+      ★
+    </b>
+    <div
+      className="ui-rating-value"
+      style={
+        Object {
+          "width": "0%",
+        }
+      }
+    >
+      <b
+        key="0"
+      >
+        ★
+      </b>
+      <b
+        key="1"
+      >
+        ★
+      </b>
+      <b
+        key="2"
+      >
+        ★
+      </b>
+      <b
+        key="3"
+      >
+        ★
+      </b>
+      <b
+        key="4"
+      >
+        ★
+      </b>
+    </div>
+  </div>
+</Rating>
+`;

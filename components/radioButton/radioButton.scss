@@ -1,0 +1,61 @@
+.ui-radio {
+  color: var(--tx-generic-color-text-dark);
+  font-family: var(--tx-generic-font-secondary-font-family), var(--tx-generic-font-secondary-generic-family);
+  font-size: 14px;
+  font-weight: var(--tx-generic-font-primary-weight-regular);
+  min-height: 20px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  padding-top: 2px;
+  position: relative;
+
+  &:hover {
+    color: var(--tx-generic-color-active);
+  }
+}
+
+.ui-radio__input-radio {
+  left: -9999px;
+  position: absolute;
+
+  &:checked + .ui-radio__label:after {
+    background-color: var(--tx-generic-color-active);
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+  }
+
+  &:focus + .ui-radio__label:before {
+    border: 2px solid var(--tx-generic-color-active);
+  }
+}
+
+.ui-radio__label {
+  cursor: pointer;
+  padding-left: 33px;
+
+  &:before {
+    background: var(--tx-generic-color-blank);
+    border-radius: 50%;
+    border: 2px solid var(--tx-generic-color-secondary-darker);
+    content: '';
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+}
+
+.ui-radio_disabled .ui-radio__label {
+  color: var(--tx-generic-color-text-light);
+  cursor: default;
+
+  &:before {
+    border-color: var(--tx-generic-color-secondary-light);
+  }
+}

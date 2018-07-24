@@ -1,0 +1,104 @@
+{
+  "name": "travix-ui-kit",
+  "version": "0.14.0",
+  "description": "Travix UI kit",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:watch": "npm run build -- -w",
+    "build": "node ./builder/program",
+    "ci:lint": "npm run lint -- --max-warnings 0 --quiet",
+    "ci:send-coverage": "codecov",
+    "ci:test": "npm test -- --bail --ci --coverage --maxWorkers=2 --no-cache --silent",
+    "lint": "eslint --color '{components,tests,utils,scripts}/**/*.js'",
+    "prebuild:watch": "npm run transpile -- -w &",
+    "prebuild": "npm run transpile -- &",
+    "prestyleguide:build": "npm run build",
+    "styleguide:build": "styleguidist build",
+    "styleguide:server": "styleguidist server",
+    "styleguide:dev": "npm run styleguide:build && npm run styleguide:server",
+    "test": "TZ=utc jest -c ./tests/jest.config.json",
+    "transpile": "babel --copy-files ./components --out-dir lib --ignore *.scss,*.md",
+    "update-snapshots": "npm test -- -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Travix-International/ui.git"
+  },
+  "keywords": [
+    "travix-ui-kit"
+  ],
+  "author": {
+    "name": "Travix International",
+    "url": "http://travix.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Travix-International/ui/tree/master/packages/travix-ui-kit",
+  "contributors": [
+    {
+      "name": "Artem Riasnianskyi",
+      "url": "https://github.com/asci"
+    },
+    {
+      "name": "Ivana Viranovska",
+      "url": "https://github.com/iwwwi"
+    },
+    {
+      "name": "Ricardo Machado",
+      "url": "https://github.com/mAiNiNfEcTiOn"
+    }
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react-select": "1.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^22.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-travix": "^1.1.0",
+    "babel-register": "^6.16.3",
+    "codecov": "^3.0.0",
+    "commander": "^2.9.0",
+    "css-loader": "~0.28.1",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.11.0",
+    "eslint-config-travix": "^3.0.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "~2.1.0",
+    "fs-extra": "^5.0.0",
+    "jest": "^22.0.0",
+    "jest-cli": "^22.2.0",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "~2.1.0",
+    "prop-types": "^15.5.8",
+    "raf": "^3.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-styleguidist": "^7.0.3",
+    "sass-loader": "~6.0.4",
+    "style-loader": "~0.20.1",
+    "theme-builder": "~0.5.0",
+    "webpack": "^3.11.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "eslint",
+      "eslint-plugin-react",
+      "extract-text-webpack-plugin",
+      "react",
+      "react-addons-test-utils",
+      "react-dom",
+      "react-styleguidist",
+      "sass-loader",
+      "webpack"
+    ]
+  }
+}

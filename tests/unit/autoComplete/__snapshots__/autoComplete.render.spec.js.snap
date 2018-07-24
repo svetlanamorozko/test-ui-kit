@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete #render() should copy mods 1`] = `
+<div
+  className="ui-autocomplete ui-autocomplete_test"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should not render item child if it not "AutoCompleteItem" 1`] = `
+<div
+  className="ui-autocomplete"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    />
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct autocomplete component 1`] = `
+<div
+  className="ui-autocomplete test-auto-complete"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct autocomplete component with default value 1`] = `
+<div
+  className="ui-autocomplete"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value="value"
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "item",
+            }
+          }
+        />
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct autocomplete component with highlighting 1`] = `
+<div
+  className="ui-autocomplete"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct autocomplete component with label 1`] = `
+<div
+  className="ui-autocomplete"
+>
+  <label
+    htmlFor="ui-autocomplete-input-autocomplete"
+    id="ui-autocomplete-label-autocomplete"
+  >
+    label
+  </label>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby="ui-autocomplete-label-autocomplete"
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct autocomplete component with title item 1`] = `
+<div
+  className="ui-autocomplete"
+>
+  <label
+    htmlFor="ui-autocomplete-input-autocomplete"
+    id="ui-autocomplete-label-autocomplete"
+  >
+    label
+  </label>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={false}
+    ariaHaspopup={false}
+    ariaLabelledby="ui-autocomplete-label-autocomplete"
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={false}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={false}
+        isTitle={true}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`AutoComplete #render() should render correct open autocomplete component 1`] = `
+<div
+  className="ui-autocomplete ui-autocomplete_open"
+>
+  <Input
+    ariaActivedescendant="ui-autocomplete-item-autocomplete-0"
+    ariaAutocomplete="list"
+    ariaExpanded={true}
+    ariaHaspopup={true}
+    ariaLabelledby=""
+    ariaOwns="ui-autocomplete-list-autocomplete"
+    autoComplete="off"
+    disabled={false}
+    id="ui-autocomplete-input-autocomplete"
+    multiline={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="combobox"
+    value=""
+  />
+  <Input
+    disabled={false}
+    hidden={true}
+    multiline={false}
+    name="autocomplete"
+    value=""
+  />
+  <div
+    className="ui-autocomplete__popunder"
+  >
+    <ul
+      aria-expanded={true}
+      className="ui-autocomplete__popunder-list"
+      id="ui-autocomplete-list-autocomplete"
+      role="listbox"
+    >
+      <AutoCompleteItem
+        id="ui-autocomplete-item-autocomplete-0"
+        index={0}
+        isActive={true}
+        isTitle={false}
+        key=".0"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        value="value"
+      >
+        item
+      </AutoCompleteItem>
+    </ul>
+  </div>
+</div>
+`;

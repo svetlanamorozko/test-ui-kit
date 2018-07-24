@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render badge with "center" alignment 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_center"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with "end" alignment 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_end"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with "end" alignment by default for "bottom" position 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_end"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with "start" alignment 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with "start" alignment by default for "top" position 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with both are position and alignment passed 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_center"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with main container class name 1`] = `
+<div
+  className="my-container-class ui-badge ui-badge_visible"
+>
+  <p>
+    Children element
+  </p>
+  <div
+    className="ui-badge-badge ui-badge-badge_start"
+  >
+    Badge title
+    <div
+      className="ui-badge__border"
+    />
+  </div>
+</div>
+`;
+
+exports[`Badge should render badge with provided className 1`] = `
+<div
+  className="test-class ui-badge-badge ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge with provided dataAttrs 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_start"
+  data-test-data-attr="test"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should render badge without border 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_no-border ui-badge-badge_start"
+>
+  Badge title
+</div>
+`;
+
+exports[`Badge should render content without badge when badge is not visible 1`] = `
+<div
+  className="ui-badge"
+>
+  Badge Content
+</div>
+`;
+
+exports[`Badge should render left arrow 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_arrow-left ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+  <span
+    className="ui-badge-badge-arrow"
+  />
+</div>
+`;
+
+exports[`Badge should render right arrow 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_arrow-right ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+  <span
+    className="ui-badge-badge-arrow"
+  />
+</div>
+`;
+
+exports[`Badge should return content inside container if title not provided 1`] = `
+<div
+  className="ui-badge ui-badge_visible"
+>
+  Badge Content
+</div>
+`;
+
+exports[`Badge should return only badge if content not provided 1`] = `
+<div
+  className="ui-badge-badge ui-badge-badge_start"
+>
+  Badge title
+  <div
+    className="ui-badge__border"
+  />
+</div>
+`;
+
+exports[`Badge should use position prop if content provided 1`] = `
+<div
+  className="ui-badge ui-badge_visible"
+>
+  Badge Content
+  <div
+    className="ui-badge-badge ui-badge-badge_start ui-badge-badge_right"
+  >
+    Badge title
+    <div
+      className="ui-badge__border"
+    />
+  </div>
+</div>
+`;
